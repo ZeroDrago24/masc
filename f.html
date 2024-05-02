@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de Ingreso</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <section id="ingresar_registro_mascota" class="contenedor">
+        <h2>Ingresar con Registro de Mascota</h2>
+        <form action="#" method="post">
+            <label for="no_registro_mascota">No. Registro Mascota:</label><br>
+            <input type="text" id="no_registro_mascota" name="no_registro_mascota" required><br>
+            <label for="clave_mascota">Clave Mascota:</label><br>
+            <input type="password" id="clave_mascota" name="clave_mascota" required><br><br>
+            <input type="checkbox" id="captcha" name="captcha" required><br>
+            <input type="submit" value="Ingresar" class="enviar-btn">
+        </form>
+    </section>
+
+</body>
+</html>
+

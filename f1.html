@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ingreso con Carnét</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <section id="ingresar_carnet" class="contenedor">
+        <h2>Ingresar con Carnét</h2>
+        <form action="#" method="post">
+            <label for="ci">CI:</label><br>
+            <input type="text" id="ci" name="ci" required><br>
+            <label for="numero_documento">Número de Documento:</label><br>
+            <input type="password" id="clave" name="clave" required><br><br>
+            <input type="checkbox" id="captcha" name="captcha" required>
+            <label for="captcha" class="captcha-label">No soy un robot</label><br>
+            <input type="submit" value="Enviar" class="enviar-btn">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobante de Existencia para Registro con Microchip</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    <section id="comprobante_registro_microchip" class="contenedor">
+        <h2>Comprobante de Existencia para Registro con Microchip</h2>
+        <form action="#" method="post">
+            <h3>Sección 1: Datos de Animal</h3>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label>Especie:</label><br>
+            <input type="radio" id="perro" name="especie" value="perro">
+            <label for="perro">Perro</label>
+            <input type="radio" id="gato" name="especie" value="gato">
+            <label for="gato">Gato</label><br>
+            <label>Sexo:</label><br>
+            <input type="radio" id="macho" name="sexo" value="macho">
+            <label for="macho">Macho</label>
+            <input type="radio" id="hembra" name="sexo" value="hembra">
+            <label for="hembra">Hembra</label><br>
+            <label for="raza">Raza:</label><br>
+            <input type="text" id="raza" name="raza"><br>
+            <label for="color">Color:</label><br>
+            <input type="text" id="color" name="color"><br>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+            <label>Tipo de Procedimiento:</label><br>
+            <input type="checkbox" id="implantacion" name="procedimiento" value="implantacion">
+            <label for="implantacion">Implantación</label><br>
+            <input type="checkbox" id="verificacion" name="procedimiento" value="verificacion">
+            <label for="verificacion">Verificación</label><br>
+            <label>Modo de Obtención:</label><br>
+            <input type="checkbox" id="recogido" name="obtencion" value="recogido">
+            <label for="recogido">Recogido</label><br>
+            <input type="checkbox" id="reubicado" name="obtencion" value="reubicado">
+            <label for="reubicado">Reubicado</label><br>
+            <input type="checkbox" id="regalo" name="obtencion" value="regalo">
+            <label for="regalo">Regalo</label><br>
+            <input type="checkbox" id="nacido_en_casa" name="obtencion" value="nacido_en_casa">
+            <label for="nacido_en_casa">Nacido en Casa</label><br>
+            <input type="checkbox" id="compra" name="obtencion" value="compra">
+            <label for="compra">Compra</label><br><br>
+            <input type="submit" value="Enviar" class="enviar-btn">
+        </form>
+    </section>
+    <section  id="datos"   class="c">
+        <h2>Datos Médicos del Veterinario</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" maxlength="30" required><br><br>
+
+        <label for="tipo_veterinario">Tipo de Veterinario:</label><br>
+        <input type="radio" id="medico" name="tipo_veterinario" value="medico" required>
+        <label for="medico">Médico Veterinario</label><br>
+        <input type="radio" id="tecnico" name="tipo_veterinario" value="tecnico" required>
+        <label for="tecnico">Técnico Veterinario</label><br><br>
+
+        <label for="comuna">Comuna:</label><br>
+        <input type="text" id="comuna" name="comuna" required><br><br>
+
+        <label for="fecha_procedimiento">Fecha de Procedimiento:</label><br>
+        <input type="date" id="fecha_procedimiento" name="fecha_procedimiento" required><br><br>
+
+        <label for="imagen">Subir Imagen:</label><br>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
+
+        <label for="fecha_firma">Fecha de Firma:</label><br>
+        <input type="date" id="fecha_firma" name="fecha_firma" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    </section>
+</body>
+</html>
